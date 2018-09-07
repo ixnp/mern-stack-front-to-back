@@ -1,5 +1,4 @@
-'use strict';
-//the validators npm package we are using only checks for a str this handles for everything else 
+
 const isEmpty = value => 
   value === undefined ||
   value === null ||

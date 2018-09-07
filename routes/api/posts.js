@@ -192,7 +192,7 @@ router.delete('/comment/:id/:comment_id', passport.authenticate('jwt',{ session:
     //////////
       // Get remove index
       const removeIndex = post.comments.map(item => item._id.toString()).indexOf(req.params.comment_id);
-      console.log('192');
+     
       //Splice comment out of array
       post.comments.splice(removeIndex, 1);
       
